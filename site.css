@@ -29,13 +29,6 @@ body {
     padding: 0;
 }
 
-header {
-    position: absolute;
-    top: 4px;
-    left: 20px;
-}
-
-/* Navigation links */
 .header-link {
     padding: 10px 20px;
     margin-right: 10px;
@@ -48,9 +41,22 @@ header {
     transition: all 0.3s ease;
 }
 
+/* Selected or active link */
+.header-link.active {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #9f13fe;
+}
+
 .header-link:hover {
     background-color: rgba(255, 255, 255, 0.3);
     color: #9f13fe;
+}
+
+/* Header styles */
+header {
+    position: absolute;
+    top: 4px;
+    left: 20px;
 }
 
 /* Main content styles */
